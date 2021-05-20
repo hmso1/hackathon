@@ -11,6 +11,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano')
 
+const tiny = require('gulp-tinypng-nokey');
+
 function compileHTML() {
   return src('src/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
@@ -51,6 +53,10 @@ function compilePrefixerSlickCSS() {
   .pipe(dest("js/slick"));
 }
 
+function compileImg() {
+  return src("src/compressed_image/*")
+  .pipe(tiny())
+  .pipe(dest("compressed_image/"));
+}
 
-
-exports.default = series(compilePrefixerCSS, compilePrefixerSCSS, compilePrefixerSlickCSS)
+exports.default = compileImg
