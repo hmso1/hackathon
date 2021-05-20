@@ -59,7 +59,7 @@ $breakpoints: ("phone": 375px, "phone-l": 480px, "tablet-s": 640px, "tablet": 76
     display: $icon-type;
     background-color: $icon-color;
     mask-size: cover;
-    mask-image: url('./../image/'+ $icon-url);
+    mask-image: url('./../compressed_image/'+ $icon-url);
 }
 
 
@@ -132,35 +132,35 @@ $breakpoints: ("phone": 375px, "phone-l": 480px, "tablet-s": 640px, "tablet": 76
 /* title - 各區塊標題 */
 .section__title span::before {
     .description & {
-        mask-image: url('./../image/title_description.png');
+        mask-image: url('./../compressed_image/title_description.png');
     }
 
     .team & {
         width: 22px;
         height: 22px;
-        mask-image: url('./../image/title_team.png');
+        mask-image: url('./../compressed_image/title_team.png');
     }
 
     .schedule & {
-        mask-image: url('./../image/title_schedule.png');
+        mask-image: url('./../compressed_image/title_schedule.png');
     }
 
     .history & {
         width: 25px;
         height: 25px;
         top: 5px;
-        mask-image: url('./../image/title_history.png');
+        mask-image: url('./../compressed_image/title_history.png');
         background-color: $color_main;
     }
 
     .judge & {
         color: #fff;
-        mask-image: url('./../image/title_judge.png');
+        mask-image: url('./../compressed_image/title_judge.png');
         background-color: $color_main;
     }
 
     .subscribe & {
-        mask-image: url('./../image/title_subscribe.png');
+        mask-image: url('./../compressed_image/title_subscribe.png');
     }
 }
 
@@ -240,7 +240,7 @@ ul {
     .nav__logo {
         @include size(160px,
             45px);
-        background: url('./../image/logo_nav.png') no-repeat center center;
+        background: url('./../compressed_image/logo_nav.png') no-repeat center center;
         background-size: 100% auto;
     }
 
@@ -315,7 +315,7 @@ ul {
         width: 80%;
         height: 70vh;
         margin: 0 auto;
-        background: url('./../image/bg_header.png') no-repeat center center;
+        background: url('./../compressed_image/bg_header.jpg') no-repeat center center;
         background-size: 80% auto;
     }
 }
@@ -349,7 +349,7 @@ ul {
     padding: 0;
 
     .description__bg {
-        background: #fff url('./../image/bg_description.jpg') no-repeat center center;
+        background: #fff url('./../compressed_image/bg_description.jpg') no-repeat center center;
         background-size: 100% auto;
         background-attachment: fixed;
 
@@ -411,7 +411,7 @@ ul {
 
     @include mq('tablet-s') {
         background-color: #000;
-        background-image: url('./../image/bg_description-mobile.jpg');
+        background-image: url('./../compressed_image/bg_description-mobile.jpg');
         background-size: 100% auto;
         background-attachment: initial;
     }
@@ -614,7 +614,7 @@ ul {
 /* ------- 歷屆成績 ------- */
 .history {
     text-align: center;
-    background: #000 url('./../image/bg_history.png') repeat-y center center;
+    background: #000 url('./../compressed_image/bg_history.jpg') repeat-y center center;
     background-attachment: fixed;
     background-size: $width-l auto;
 
@@ -631,7 +631,7 @@ ul {
 /* 歷屆成績 - RWD */
 .history {
     @include mq('tablet-s') {
-        background-image: url('./../image/bg_history-mobile.png');
+        background-image: url('./../compressed_image/bg_history-mobile.png');
         background-size: cover;
         background-attachment: initial;
     }
@@ -708,21 +708,21 @@ ul {
         '');
 
     &.icon-strength {
-        mask-image: url('./../image/icon-strength.png');
+        mask-image: url('./../compressed_image/icon-strength.png');
     }
 
     &.icon-buddha {
         width: 80px;
         height: 80px;
-        mask-image: url('./../image/icon-buddha.png');
+        mask-image: url('./../compressed_image/icon-buddha.png');
     }
 
     &.icon-sleep {
-        mask-image: url('./../image/icon-sleep.png');
+        mask-image: url('./../compressed_image/icon-sleep.png');
     }
 
     &.icon-bao {
-        mask-image: url('./../image/icon-bao.png');
+        mask-image: url('./../compressed_image/icon-bao.png');
     }
 }
 
@@ -965,7 +965,7 @@ ul {
 
 /* 報名資訊 ------- */
 .subscribe {
-    background: #fff url('./../image/bg_footer.png') no-repeat center center;
+    background: #fff url('./../compressed_image/bg_footer.jpg') no-repeat center center;
     background-size: auto 380px;
     border-bottom: 3px solid $color_main;
 
@@ -1060,19 +1060,19 @@ ul {
         }
 
         &.icon-fb {
-            mask-image: url('./../image/icon-fb.png');
+            mask-image: url('./../compressed_image/icon-fb.png');
         }
 
         &.icon-twitter {
-            mask-image: url('./../image/icon-twitter.png');
+            mask-image: url('./../compressed_image/icon-twitter.png');
         }
 
         &.icon-ig {
-            mask-image: url('./../image/icon-ig.png');
+            mask-image: url('./../compressed_image/icon-ig.png');
         }
 
         &.icon-g-plus {
-            mask-image: url('./../image/icon-g-plus.png');
+            mask-image: url('./../compressed_image/icon-g-plus.png');
         }
     }
 }
