@@ -5,8 +5,8 @@
   <title>MTR 新拖延運動黑客松 | 2019</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Noto+Sans+TC&display=swap" rel="stylesheet">
-
+  <!-- <link href="https://fonts.googleapis.com/css?family=Arvo|Noto+Sans+TC&display=swap" rel="stylesheet"> -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./js/slick/slick.css">
   <link rel="stylesheet" href="./js/slick/slick-theme.css">
@@ -53,7 +53,7 @@
       <!-- 比賽簡介 -->
       <section class="section description">
         <h3 class="section__title"><span>比賽簡介</span></h3>
-        <div class="description__bg">
+        <div class="description__bg lazy" data-bg="url(./compressed_image/bg_description.jpg)">
           <div class="description__inner">
             <div class="typed description__title">
                 <h4 id="typed"></h4>
@@ -75,67 +75,67 @@
         <h3 class="section__title"><span>參賽隊伍</span></h3>
         <ul class="team-list">
           <!-- item -->
-          <li class="team__item team__block__item body__section__team__item__section">
-            <p class="team__title team__block__title body__section__team__item__title">
-              <span class="team__name team__block__name body__section__team__item__name">逃得越遠越好</span>
+          <li class="team__item">
+            <p class="team__title">
+              <span class="team__name">逃得越遠越好</span>
               交給同組的各位囉！
             </p>
             <div class="team__pic">
-              <img src="./compressed_image/team_a.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/team_a.jpg" alt="">
             </div>
             <a class="team__btn" href="">隊伍介紹</a>
           </li>
           <!-- item -->
-          <li class="team__item team__block__item body__section__team__item__section">
-            <p class="team__title team__block__title body__section__team__item__title">
-              <span class="team__name team__block__name body__section__team__item__name">不要吵我好嗎？</span>
+          <li class="team__item">
+            <p class="team__title">
+              <span class="team__name">不要吵我好嗎？</span>
               躺著真的很快樂</p>
             <div class="team__pic">
-              <img src="./compressed_image/team_b.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/team_b.jpg" alt="">
             </div>
             <a class="team__btn" href="">隊伍介紹</a>
           </li>
           <!-- item -->
-          <li class="team__item team__block__item body__section__team__item__section">
-            <p class="team__title team__block__title body__section__team__item__title">
-              <span class="team__name team__block__name body__section__team__item__name">我還是個孩紙</span>
+          <li class="team__item">
+            <p class="team__title">
+              <span class="team__name">我還是個孩紙</span>
               來人啊！快救我
             </p>
             <div class="team__pic">
-              <img src="./compressed_image/team_c.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/team_c.jpg" alt="">
             </div>
             <a class="team__btn" href="">隊伍介紹</a>
           </li>
           <!-- item -->
-          <li class="team__item team__block__item body__section__team__item__section">
-            <p class="team__title team__block__title body__section__team__item__title">
-              <span class="team__name team__block__name body__section__team__item__name">我是誰？我在哪？</span>
+          <li class="team__item">
+            <p class="team__title">
+              <span class="team__name">我是誰？我在哪？</span>
               可以回家了嗎？
             </p>
             <div class="team__pic">
-              <img src="./compressed_image/team_d.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/team_d.jpg" alt="">
             </div>
             <a class="team__btn" href="">隊伍介紹</a>
           </li>
           <!-- item -->
-          <li class="team__item team__block__item body__section__team__item__section">
-            <p class="team__title team__block__title body__section__team__item__title">
-              <span class="team__name team__block__name body__section__team__item__name">我想打電動</span>
+          <li class="team__item">
+            <p class="team__title">
+              <span class="team__name">我想打電動</span>
               我媽逼我來的
             </p>
             <div class="team__pic">
-              <img src="./compressed_image/team_e.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/team_e.jpg" alt="">
             </div>
             <a class="team__btn" href="">隊伍介紹</a>
           </li>
           <!-- item -->
-          <li class="team__item team__block__item body__section__team__item__section">
-            <p class="team__title team__block__title body__section__team__item__title">
-              <span class="team__name team__block__name body__section__team__item__name">mama coco</span>
+          <li class="team__item">
+            <p class="team__title">
+              <span class="team__name">mama coco</span>
               呵呵呵
             </p>
             <div class="team__pic">
-              <img src="./compressed_image/team_f.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/team_f.jpg" alt="">
             </div>
             <a class="team__btn" href="">隊伍介紹</a>
           </li>
@@ -199,7 +199,7 @@
       </section>
 
       <!-- 歷屆成績 -->
-      <section class="section history">
+      <section class="section history lazy" data-bg="url(./compressed_image/bg_history.jpg), linear-gradient(#000, #000)">
         <h3 class="section__title dark-mode"><span>歷屆成績</span></h3>
         <ul class="history__list">
           <li class="history__item body_section--history-item__li">
@@ -292,7 +292,7 @@
         <ul class="judge__gallery">
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_a_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_a_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">我是不明生物</h4>
@@ -306,7 +306,7 @@
           <!-- item -->
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_b_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_b_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">巴哥巴哥 pug pug</h4>
@@ -320,7 +320,7 @@
           <!-- item -->
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_c_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_c_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">本人小萌貓啦</h4>
@@ -334,7 +334,7 @@
           <!-- item -->
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_d_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_d_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">無尾熊走路超慢你知道嗎</h4>
@@ -348,7 +348,7 @@
           <!-- item -->
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_e_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_e_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">木柵耍萌扛壩子</h4>
@@ -362,7 +362,7 @@
           <!-- item -->
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_f_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_f_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">馬馬很危險喔</h4>
@@ -376,7 +376,7 @@
           <!-- item -->
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_g_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_g_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">熊熊沒事做</h4>
@@ -390,7 +390,7 @@
           <!-- item -->
           <li>
             <div class="pic this_is_an_image image123321 image456789">
-              <img src="./compressed_image/judge_h_l.jpg" alt="">
+              <img class="lazy" data-src="./compressed_image/judge_h_l.jpg" alt="">
             </div>
             <div class="judge__card">
               <h4 class="judge__card-title">你～說～什～毛～</h4>
@@ -411,7 +411,7 @@
     <footer class="section footer">
       
       <!-- 報名資訊 -->
-      <section class="subscribe">
+      <section class="subscribe lazy" data-bg="url(./../compressed_image/bg_footer.jpg), linear-gradient(#fff, #fff)">
         <div class="subscribe__inner">
           <h3 class="section__title"><span>報名資訊</span></h3>
           <p class="subscribe__summary">
@@ -438,8 +438,10 @@
         </div>
       </section>
     </footer>
-
   </div>
+  <script>
+    lazyLoadInstance.update();
+  </script>
 </body>
 </html>
 
