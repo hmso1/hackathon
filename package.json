@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "## 介紹",
   "main": "gulpfile.js",
+  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules convertWebp.js "
+    
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,8 @@
     "postcss": "^8.2.15"
   },
   "dependencies": {
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "imagemin": "^8.0.0",
+    "imagemin-webp": "^6.0.0"
   }
 }

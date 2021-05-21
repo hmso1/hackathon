@@ -62,8 +62,6 @@ body, ul {
   background-color: #000;
   -webkit-mask-size: cover;
           mask-size: cover;
-  -webkit-mask-image: url("./../compressed_image/");
-          mask-image: url("./../compressed_image/");
   position: relative;
   top: 3px;
   right: 5px;

@@ -59,4 +59,11 @@ function compileImg() {
   .pipe(dest("compressed_image/"));
 }
 
-exports.default = series(compileHTML, compileJS, compileSlickJS, compilePrefixerSCSS, compilePrefixerCSS, compilePrefixerSlickCSS)
+function compileSCSS() {
+  return src("src/css/*.scss")
+  .pipe(sass().on('error', sass.logError))
+  .pipe(dest("src/"));
+}
+
+exports.default = compileSCSS
+// exports.default = series(compileHTML, compileJS, compileSlickJS, compilePrefixerSCSS, compilePrefixerCSS, compilePrefixerSlickCSS)
