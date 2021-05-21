@@ -349,9 +349,11 @@ ul {
     padding: 0;
 
     .description__bg {
-        background: #fff url('./../compressed_image/bg_description.jpg') no-repeat center center;
-        background-size: 100% auto;
-        background-attachment: fixed;
+        // background: #fff url('./../compressed_image/bg_description.jpg') no-repeat center center;
+        background-size:100% auto;
+        background-attachment:fixed;
+        background-repeat:no-repeat;
+        background-position:50%;
 
         .description__inner {
             max-width: $width-m;
@@ -614,9 +616,12 @@ ul {
 /* ------- 歷屆成績 ------- */
 .history {
     text-align: center;
-    background: #000 url('./../compressed_image/bg_history.jpg') repeat-y center center;
+    // background: #000 url('./../compressed_image/bg_history.jpg') repeat-y center center;
     background-attachment: fixed;
     background-size: $width-l auto;
+    background-position:50%;
+    background-repeat:repeat-x;
+
 
     .history__list {
         max-width: $width-l;
@@ -965,7 +970,9 @@ ul {
 
 /* 報名資訊 ------- */
 .subscribe {
-    background: #fff url('./../compressed_image/bg_footer.jpg') no-repeat center center;
+    // background: #fff url('./../compressed_image/bg_footer.jpg') no-repeat center center;
+    background-repeat:no-repeat;
+    background-position:50%;
     background-size: auto 380px;
     border-bottom: 3px solid $color_main;
 
@@ -1075,4 +1082,32 @@ ul {
             mask-image: url('./../compressed_image/icon-g-plus.png');
         }
     }
+}
+
+img.lazy {
+	opacity: 0;
+}
+img {
+	&:not(.initial) {
+		transition: opacity 1s;
+	}
+	&:not([src]) {
+		visibility: hidden;
+	}
+}
+img.initial {
+	opacity: 1;
+}
+img.loaded {
+	opacity: 1;
+}
+img.error {
+	opacity: 1;
+}
+[data-bg-multi] {
+	opacity: 0;
+	transition: all 1s;
+}
+[data-ll-status="applied"] {
+	opacity: 1;
 }
