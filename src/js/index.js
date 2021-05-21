@@ -61,5 +61,9 @@ $(function(){
       document.querySelector('.nav').classList.remove('nav-scrolled')
     }
   }, {capture: false, passive: true })
-});
 
+  var lazyLoadInstance = new LazyLoad({
+    // Your custom settings go here
+  });
+  
+});

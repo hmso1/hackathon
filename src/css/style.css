@@ -305,10 +305,17 @@ ul {
 }
 
 .description .description__bg {
+  background-size:100% auto;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:50%
+}
+
+/* .description .description__bg {
   background: #fff url("./../compressed_image/bg_description.jpg") no-repeat center center;
   background-size: 100% auto;
   background-attachment: fixed;
-}
+} */
 
 .description .description__bg .description__inner {
   max-width: 860px;
@@ -573,12 +580,20 @@ ul {
 }
 
 /* ------- 歷屆成績 ------- */
-.history {
+.history{
+  text-align:center;
+  background-attachment:fixed;
+  background-position:50%;
+  background-repeat:repeat-x;
+  background-size:960px auto
+}
+
+/* .history {
   text-align: center;
   background: #000 url("./../compressed_image/bg_history.jpg") repeat-y center center;
   background-attachment: fixed;
   background-size: 960px auto;
-}
+} */
 
 .history .history__list {
   max-width: 960px;
@@ -968,10 +983,17 @@ ul {
 /* ------- footer ------- */
 /* 報名資訊 ------- */
 .subscribe {
+  background-repeat:no-repeat;
+  background-position:50%;
+  background-size:auto 380px;
+  border-bottom:3px solid #fad312
+}
+
+/* .subscribe {
   background: #fff url("./../compressed_image/bg_footer.jpg") no-repeat center center;
   background-size: auto 380px;
   border-bottom: 3px solid #FAD312;
-}
+} */
 
 .subscribe .subscribe__inner {
   max-width: 700px;
@@ -1096,5 +1118,32 @@ ul {
 .footer__social-media .footer__social-icon.icon-g-plus {
   -webkit-mask-image: url("./../compressed_image/icon-g-plus.png");
           mask-image: url("./../compressed_image/icon-g-plus.png");
+}
+
+img.lazy {
+  opacity: 0;
+}
+
+img:not(.initial) {
+  transition: opacity 1s;
+}
+img.initial,
+img.loaded,
+img.error {
+  opacity: 1;
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+
+[data-bg-multi] {
+	opacity: 0;
+	transition: all 1s
+}
+
+[data-ll-status="applied"] {
+	opacity: 1
 }
 /*# sourceMappingURL=style.css.map */
