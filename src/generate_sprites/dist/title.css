@@ -1,0 +1,7 @@
+/* Output */
+.description { background-image: url(images/icon_titles.png); background-position: 0px 0px; background-size: 120px 80px; }
+.team { background-image: url(images/icon_titles.png); background-position: -40px 0px; background-size: 120px 80px; }
+.schedule { background-image: url(images/icon_titles.png); background-position: 0px -40px; background-size: 120px 80px; }
+.history { background-image: url(images/icon_titles.png); background-position: -40px -40px; background-size: 120px 80px; }
+.judge { background-image: url(images/icon_titles.png); background-position: -80px 0px; background-size: 120px 80px; }
+.subscribe { background-image: url(images/icon_titles.png); background-position: -80px -40px; background-size: 120px 80px; }

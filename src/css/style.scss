@@ -68,9 +68,9 @@ $breakpoints: ("phone": 375px, "phone-l": 480px, "tablet-s": 640px, "tablet": 76
     mask-size: cover;
     mask-image: url('./../compressed_image/'+ $icon-url + '.png');
 
-    // .webp & {
-    //     mask-image: url('./../webp/'+ $icon-url + '.webp');
-    // }
+    .webp & {
+        mask-image: url('./../webp/'+ $icon-url + '.webp');
+    }
 }
 
 
@@ -125,7 +125,7 @@ $breakpoints: ("phone": 375px, "phone-l": 480px, "tablet-s": 640px, "tablet": 76
             @include pseudo();
             @include size(20px);
             @include icon(#000,
-                '');
+                'icon_titles');
             @include relative($right: 5px, $top: 3px);
         }
     }
@@ -143,35 +143,47 @@ $breakpoints: ("phone": 375px, "phone-l": 480px, "tablet-s": 640px, "tablet": 76
 /* title - 各區塊標題 */
 .section__title span::before {
     .description & {
-        mask-image: url('./../compressed_image/title_description.png');
+        mask-position: 0 0;
+        mask-size: 120px 80px;
+        // mask-image: url('./../compressed_image/title_description.png');
     }
 
     .team & {
         width: 22px;
         height: 22px;
-        mask-image: url('./../compressed_image/title_team.png');
+        mask-position: -40px 0px;
+        mask-size: 120px 80px;
+        // mask-image: url('./../compressed_image/title_team.png');
     }
 
     .schedule & {
-        mask-image: url('./../compressed_image/title_schedule.png');
+        mask-position: 0px -40px;
+        mask-size: 120px 80px;
+        // mask-image: url('./../compressed_image/title_schedule.png');
     }
 
     .history & {
         width: 25px;
         height: 25px;
         top: 5px;
-        mask-image: url('./../compressed_image/title_history.png');
+        mask-position: -40px -40px;
+        mask-size: 120px 80px;
+        // mask-image: url('./../compressed_image/title_history.png');
         background-color: $color_main;
     }
 
     .judge & {
         color: #fff;
-        mask-image: url('./../compressed_image/title_judge.png');
+        mask-position: -80px 0px;
+        mask-size: 120px 80px;
+        // mask-image: url('./../compressed_image/title_judge.png');
         background-color: $color_main;
     }
 
     .subscribe & {
-        mask-image: url('./../compressed_image/title_subscribe.png');
+        mask-position: -80px -40px;
+        mask-size: 120px 80px;
+        // mask-image: url('./../compressed_image/title_subscribe.png');
     }
 }
 

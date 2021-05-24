@@ -1,0 +1,5 @@
+/* Output */
+.strength { background-image: url(images/icon_comments.png); background-position: 0px 0px; background-size: 320px 320px; }
+.buddha { background-image: url(images/icon_comments.png); background-position: -160px 0px; background-size: 320px 320px; }
+.sleep { background-image: url(images/icon_comments.png); background-position: 0px -160px; background-size: 320px 320px; }
+.bao { background-image: url(images/icon_comments.png); background-position: -160px -160px; background-size: 320px 320px; }

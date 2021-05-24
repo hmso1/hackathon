@@ -54,11 +54,14 @@ body, ul {
       background-color: #000;
       -webkit-mask-size: cover;
               mask-size: cover;
-      -webkit-mask-image: url("./../compressed_image/.png");
-              mask-image: url("./../compressed_image/.png");
+      -webkit-mask-image: url("./../compressed_image/icon_titles.png");
+              mask-image: url("./../compressed_image/icon_titles.png");
       position: relative;
       top: 3px;
       right: 5px; }
+      .webp .section .section__title span::before, .section .webp .section__title span::before {
+        -webkit-mask-image: url("./../webp/icon_titles.webp");
+                mask-image: url("./../webp/icon_titles.webp"); }
   .section .dark-mode.section__title {
     border-color: #626262; }
     .section .dark-mode.section__title span {
@@ -66,36 +69,48 @@ body, ul {
 
 /* title - 各區塊標題 */
 .description .section__title span::before {
-  -webkit-mask-image: url("./../compressed_image/title_description.png");
-          mask-image: url("./../compressed_image/title_description.png"); }
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+  -webkit-mask-size: 120px 80px;
+          mask-size: 120px 80px; }
 
 .team .section__title span::before {
   width: 22px;
   height: 22px;
-  -webkit-mask-image: url("./../compressed_image/title_team.png");
-          mask-image: url("./../compressed_image/title_team.png"); }
+  -webkit-mask-position: -40px 0px;
+          mask-position: -40px 0px;
+  -webkit-mask-size: 120px 80px;
+          mask-size: 120px 80px; }
 
 .schedule .section__title span::before {
-  -webkit-mask-image: url("./../compressed_image/title_schedule.png");
-          mask-image: url("./../compressed_image/title_schedule.png"); }
+  -webkit-mask-position: 0px -40px;
+          mask-position: 0px -40px;
+  -webkit-mask-size: 120px 80px;
+          mask-size: 120px 80px; }
 
 .history .section__title span::before {
   width: 25px;
   height: 25px;
   top: 5px;
-  -webkit-mask-image: url("./../compressed_image/title_history.png");
-          mask-image: url("./../compressed_image/title_history.png");
+  -webkit-mask-position: -40px -40px;
+          mask-position: -40px -40px;
+  -webkit-mask-size: 120px 80px;
+          mask-size: 120px 80px;
   background-color: #FAD312; }
 
 .judge .section__title span::before {
   color: #fff;
-  -webkit-mask-image: url("./../compressed_image/title_judge.png");
-          mask-image: url("./../compressed_image/title_judge.png");
+  -webkit-mask-position: -80px 0px;
+          mask-position: -80px 0px;
+  -webkit-mask-size: 120px 80px;
+          mask-size: 120px 80px;
   background-color: #FAD312; }
 
 .subscribe .section__title span::before {
-  -webkit-mask-image: url("./../compressed_image/title_subscribe.png");
-          mask-image: url("./../compressed_image/title_subscribe.png"); }
+  -webkit-mask-position: -80px -40px;
+          mask-position: -80px -40px;
+  -webkit-mask-size: 120px 80px;
+          mask-size: 120px 80px; }
 
 /* ------- layout ------- */
 * {
@@ -300,10 +315,12 @@ ul {
 
 @media screen and (max-width: 640px) {
   .description .description__bg {
-    background-color: #000;
     background-image: url("./../compressed_image/bg_description-mobile.jpg");
+    background-color: #000;
     background-size: 100% auto;
-    background-attachment: initial; } }
+    background-attachment: initial; }
+    .webp .description .description__bg {
+      background-image: url("./../webp/bg_description-mobile.webp"); } }
 
 @media screen and (max-width: 480px) {
   .description .description__bg {
@@ -360,6 +377,9 @@ ul {
             mask-image: url("./../compressed_image/add-circular-outlined-button.png");
     position: absolute;
     right: 10px; }
+    .webp .team__title:before {
+      -webkit-mask-image: url("./../webp/add-circular-outlined-button.webp");
+              mask-image: url("./../webp/add-circular-outlined-button.webp"); }
   .team__title .team__name {
     color: #999;
     display: block;
@@ -481,9 +501,11 @@ ul {
 /* 歷屆成績 - RWD */
 @media screen and (max-width: 640px) {
   .history {
-    background-image: url("./../compressed_image/bg_history-mobile.png");
+    background-image: url("./../compressed_image/bg_history-mobile.jpg");
     background-size: cover;
-    background-attachment: initial; } }
+    background-attachment: initial; }
+    .webp .history {
+      background-image: url("./../webp/bg_history-mobile.webp"); } }
 
 @media screen and (max-width: 768px) {
   .history .history__list {
@@ -555,6 +577,9 @@ ul {
           mask-size: cover;
   -webkit-mask-image: url("./../compressed_image/.png");
           mask-image: url("./../compressed_image/.png"); }
+  .webp .comments__icon {
+    -webkit-mask-image: url("./../webp/.webp");
+            mask-image: url("./../webp/.webp"); }
   .comments__icon.icon-strength {
     -webkit-mask-image: url("./../compressed_image/icon-strength.png");
             mask-image: url("./../compressed_image/icon-strength.png"); }
@@ -630,6 +655,9 @@ ul {
   left: calc(50% - 10px);
   opacity: 0;
   z-index: 1; }
+  .webp .judge__item .pic::after {
+    -webkit-mask-image: url("./../webp/add-circular-outlined-button.webp");
+            mask-image: url("./../webp/add-circular-outlined-button.webp"); }
 
 /* nav - hover */
 .judge__item:hover {
@@ -863,6 +891,9 @@ ul {
             mask-image: url("./../compressed_image/.png");
     margin-left: 5px;
     cursor: pointer; }
+    .webp .footer__social-media .footer__social-icon {
+      -webkit-mask-image: url("./../webp/.webp");
+              mask-image: url("./../webp/.webp"); }
     .footer__social-media .footer__social-icon:hover {
       background: #eee; }
     .footer__social-media .footer__social-icon.icon-fb {

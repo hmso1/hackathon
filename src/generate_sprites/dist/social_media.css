@@ -1,0 +1,5 @@
+/* Output */
+.fb { background-image: url(images/icon_social_media.png); background-position: 0px 0px; background-size: 120px 120px; }
+.twitter { background-image: url(images/icon_social_media.png); background-position: -60px 0px; background-size: 120px 120px; }
+.ig { background-image: url(images/icon_social_media.png); background-position: 0px -60px; background-size: 120px 120px; }
+.g-plus { background-image: url(images/icon_social_media.png); background-position: -60px -60px; background-size: 120px 120px; }
