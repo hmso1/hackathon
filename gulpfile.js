@@ -54,7 +54,7 @@ function compilePrefixerSlickCSS() {
 }
 
 function compileImg() {
-  return src("src/compressed_image/*")
+  return src("src/compressed_image/")
   .pipe(tiny())
   .pipe(dest("compressed_image/"));
 }
@@ -62,8 +62,12 @@ function compileImg() {
 function compileSCSS() {
   return src("src/css/*.scss")
   .pipe(sass().on('error', sass.logError))
-  .pipe(dest("src/"));
+  .pipe(postcss([autoprefixer()]))
+  .pipe(dest("src/css"));
 }
+
 
 exports.default = compileSCSS
 // exports.default = series(compileHTML, compileJS, compileSlickJS, compilePrefixerSCSS, compilePrefixerCSS, compilePrefixerSlickCSS)
+
+
