@@ -53,8 +53,9 @@ function compilePrefixerSlickCSS() {
   .pipe(dest("js/slick"));
 }
 
+
 function compileImg() {
-  return src("src/compressed_image/")
+  return src("src/compressed_image/*")
   .pipe(tiny())
   .pipe(dest("compressed_image/"));
 }

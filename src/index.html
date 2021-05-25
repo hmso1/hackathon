@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script  defer="defer" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
   <script>
+    !function () {
+      console.log('log')
+    }
     ! function(e) {
       "use strict";
 
@@ -15,8 +18,8 @@
               var t = e.documentElement;
               t.classList ? t.classList.add("webp") : t.className += " webp", window.sessionStorage.setItem("webpSupport", !0)
           }
-      }! function(e) {
-
+      }
+      ! function(e) {
           if (window.sessionStorage && window.sessionStorage.getItem("webpSupport")) s(!0);
           else {
               var t = new Image;
@@ -545,9 +548,6 @@
       </section>
     </footer>
   </div>
-  <script>
-    lazyLoadInstance.update();
-  </script>
 </body>
 </html>
 
